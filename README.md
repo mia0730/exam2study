@@ -4,24 +4,6 @@ A study site for Building Construction (CONM 1200). **Exam 2** (foundations and
 concrete, Weeks 4–7) is the main content; the Exam 1 material is kept as a
 review section.
 
-## Putting it on GitHub Pages
-
-1. Open your repository on GitHub and click **Add file → Upload files**.
-2. Drag in **all** of these files, keeping them at the top level — no folder:
-   - `index.html` · `foundations.html` · `concrete.html` · `placing.html`
-   - `glossary.html` · `quiz.html` · `review.html`
-   - `topics.html` · `calc.html`
-   - `style.css` · `app.js` · `README.md` (optional)
-3. Commit the upload. If you're updating an existing repo, GitHub will ask to
-   overwrite the files that already exist — say yes.
-4. **Settings → Pages**: Source = *Deploy from a branch*, branch **main**,
-   folder **/ (root)**. Save.
-5. A minute or two later the site is live at
-   `https://<your-username>.github.io/<repo-name>/`
-
-All files must sit next to each other at the root — the pages link to
-`style.css` and `app.js` by relative path.
-
 ## What's in it
 
 ### Exam 2 (Weeks 4–7)
