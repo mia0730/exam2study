@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zoning Math — CONM 1200 Exam 1</title>
+<meta name="description" content="FAR, Open Space Ratio and lot coverage: the formulas, the professor's worked example, and unlimited practice problems.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="review.html"><span class="dot">C</span> CONM 1200 · Exam 1 Review</a>
+    <nav class="main">
+      <a href="index.html" data-short="Home">Home</a>
+      <a href="foundations.html" data-short="Found.">Foundations</a>
+      <a href="concrete.html" data-short="Concrete">Concrete Basics</a>
+      <a href="placing.html" data-short="Placing">Placing &amp; Curing</a>
+      <a href="glossary.html" data-short="Terms">Glossary</a>
+      <a href="quiz.html" data-short="Test">Practice Test</a>
+      <a href="review.html" data-short="Exam 1">Exam 1</a>
+    </nav>
+    <button class="theme-btn" title="Toggle light/dark">☾</button>
+  </div>
+</header>
+
+<main class="wrap narrow">
+
+  
+  <div class="callout"><span class="tag">Exam 1 material</span><p>This page covers the <strong>first</strong> exam. For Exam 2 — foundations and concrete — start at the <a href="index.html">home page</a>, or see the <a href="review.html">connections between the two exams</a>.</p></div>
+<h1>Zoning Math</h1>
+  <p class="lede">The study guide says: <em>"be able to compute Open Space Ratio and Floor Area Ratio from data on the lot size and building size."</em> This is the one question on the exam that takes real minutes — make it automatic.</p>
+
+  <h2>The formulas</h2>
+
+  <div class="card">
+    <div class="formula"><b>FAR</b> = Total <em>gross</em> building area ÷ Lot area</div>
+    <p style="font-size:14.5px;color:var(--ink-2)">Total gross building area = <strong>every floor added together</strong>. A ratio, not a percent — report it as a decimal like 1.48.</p>
+
+    <div class="formula"><b>Open space</b> = Lot area − Building footprint − Parking lot</div>
+    <div class="formula"><b>OSR</b> = Open space ÷ Lot area × 100</div>
+    <p style="font-size:14.5px;color:var(--ink-2)">Reported as a <strong>percent</strong>. The footprint is <strong>one floor</strong> — the area the building actually sits on.</p>
+
+    <div class="formula"><b>Lot Coverage</b> = (Footprint + Parking) ÷ Lot area × 100</div>
+    <p style="font-size:14.5px;color:var(--ink-2)">Also a percent. <strong>Lot Coverage = 100% − OSR</strong> — use that as your check every time.</p>
+
+    <div class="formula"><b>Building height</b> = Number of floors × Height per floor</div>
+  </div>
+
+  <div class="callout trap">
+    <span class="tag">The mistake that costs people the question</span>
+    <p><strong>FAR uses all the floors. OSR and lot coverage use only the footprint — but they <em>do</em> include the parking lot.</strong></p>
+    <p style="margin-top:8px">In the class example: FAR uses 40,000 sf (four floors). Open space subtracts only 10,000 sf (one floor's footprint) — <em>plus</em> the 2,000 sf parking lot. If you subtract 40,000 from the lot area you'll get a negative open space and know instantly you've made this mistake.</p>
+  </div>
+
+  <div class="callout tip">
+    <span class="tag">Also worth knowing</span>
+    <p><strong>"Min lot area per dwelling unit 6,000 sf"</strong> is a fourth kind of limit that showed up in the example's regulations. It caps how many units you may build: <em>max units = lot area ÷ required area per unit.</em> On the 27,000 sf lot that's 27,000 ÷ 6,000 = <strong>4.5, so 4 dwelling units maximum</strong> (you always round <em>down</em> — you can't have half a unit). It wasn't asked in the class problem, but it's in the regulations list, so know what it means.</p>
+  </div>
+
+  <h2>The professor's worked example</h2>
+  <p>Lot A, Anytown MA — 27,000 sf, 180 ft of frontage on Main St. A developer wants a <strong>4-story condo, 10,000 gross sf per floor</strong>, with a <strong>2,000 sf asphalt parking lot</strong>. Assume each floor is 10 ft tall.</p>
+
+  <div class="card">
+    <h4>Zoning requires</h4>
+    <div class="tablewrap">
+      <table>
+        <tbody>
+          <tr><td>Min setback front yard</td><td class="mono">20 ft</td></tr>
+          <tr><td>Min setback side yard (each side)</td><td class="mono">15 ft</td></tr>
+          <tr><td>Min setback rear yard</td><td class="mono">25 ft</td></tr>
+          <tr><td>Max height</td><td class="mono">45 ft</td></tr>
+          <tr><td>Max FAR</td><td class="mono">3.00</td></tr>
+          <tr><td>Min OSR</td><td class="mono">50%</td></tr>
+          <tr><td>Min lot area per dwelling unit</td><td class="mono">6,000 sf</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:14.5px;color:var(--ink-2);margin-top:12px">Allowed uses: single and two family detached dwellings, townhouse dwellings, multifamily dwellings (apartment buildings, condos). A condo building is an allowed use. ✓</p>
+  </div>
+
+  <div class="card">
+    <h4>Step 1 — Height</h4>
+    <div class="formula">4 floors × 10 ft = <b>40 ft</b> &nbsp;&nbsp; 40 ft &lt; 45 ft &nbsp;&nbsp; ✓ OK</div>
+
+    <h4>Step 2 — FAR</h4>
+    <div class="formula">Total gross bldg area = 4 × 10,000 = 40,000 sf</div>
+    <div class="formula">FAR = 40,000 ÷ 27,000 = <b>1.48</b> &nbsp;&nbsp; 1.48 &lt; 3.00 &nbsp;&nbsp; ✓ OK</div>
+
+    <h4>Step 3 — Open Space Ratio</h4>
+    <div class="formula">Open space = 27,000 − 10,000 − 2,000 = 15,000 sf</div>
+    <div class="formula">OSR = 15,000 ÷ 27,000 × 100 = <b>56%</b> &nbsp;&nbsp; 56% &gt; 50% &nbsp;&nbsp; ✓ OK</div>
+
+    <h4>Step 4 — Lot coverage (not asked, but know it)</h4>
+    <div class="formula">Lot Coverage = (10,000 + 2,000) ÷ 27,000 × 100 = <b>44%</b></div>
+    <div class="formula">Check: 100% − 56% = 44% ✓</div>
+
+    <div class="callout">
+      <p><strong>Answer to the question as asked:</strong> yes — the proposed development meets the zoning regulations for maximum height, maximum FAR and minimum OSR.</p>
+      <p style="margin-top:8px"><em>Note:</em> slide 30 shows this rounded to 45%; the revised solution sheet gives 44%, which is what the division actually produces (44.4%). Go with 44%.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h4>Step 5 — The setback sketch</h4>
+    <p>Part (1) of the problem asks you to show the minimum setback distances on the sketch. You draw a dashed line inside each lot line at the required distance, and the area enclosed is the <strong>buildable area</strong>:</p>
+    <ul>
+      <li><strong>20 ft</strong> in from the front lot line (the Main St. frontage)</li>
+      <li><strong>15 ft</strong> in from each side lot line</li>
+      <li><strong>25 ft</strong> in from the rear lot line</li>
+    </ul>
+    <p>The building footprint must sit entirely within that dashed boundary.</p>
+  </div>
+
+  <h2>Try it yourself</h2>
+  <p>Type in any numbers and it works the whole thing out, showing the arithmetic. Start by re-entering the Anytown numbers to confirm you get 1.48 and 56%.</p>
+
+  <div class="card">
+    <h4>The project</h4>
+    <div class="calcgrid">
+      <div class="field"><label for="lot">Lot area (sf)</label><input id="lot" type="number" value="27000"></div>
+      <div class="field"><label for="floors">Number of floors</label><input id="floors" type="number" value="4"></div>
+      <div class="field"><label for="gross">Gross area per floor (sf)</label><input id="gross" type="number" value="10000"></div>
+      <div class="field"><label for="park">Parking lot area (sf)</label><input id="park" type="number" value="2000"></div>
+      <div class="field"><label for="fh">Height per floor (ft)</label><input id="fh" type="number" value="10"></div>
+      <div class="field"><label for="foot">Footprint (sf) — leave blank to use one floor</label><input id="foot" type="number" placeholder="same as one floor"></div>
+    </div>
+
+    <h4 style="margin-top:22px">The zoning limits</h4>
+    <div class="calcgrid">
+      <div class="field"><label for="maxh">Max height (ft)</label><input id="maxh" type="number" value="45"></div>
+      <div class="field"><label for="maxfar">Max FAR</label><input id="maxfar" type="number" step="0.01" value="3.00"></div>
+      <div class="field"><label for="minosr">Min OSR (%)</label><input id="minosr" type="number" value="50"></div>
+      <div class="field"><label for="perunit">Min lot area per dwelling unit (sf)</label><input id="perunit" type="number" value="6000"></div>
+    </div>
+  </div>
+
+  <div class="card" id="results"></div>
+
+  <h2>Practice problems</h2>
+  <p>Generates a fresh problem with realistic numbers. Work it out on paper first, then check.</p>
+
+  <div class="btnrow">
+    <button class="btn" id="newprob">New problem</button>
+    <button class="btn ghost" id="showsol">Show solution</button>
+  </div>
+
+  <div class="card" id="problem"></div>
+  <div class="card" id="solution" style="display:none"></div>
+
+</main>
+
+<footer>CONM 1200 · Building Construction · Exam 1 study site</footer>
+
+<script src="app.js"></script>
+<script>
+(function () {
+  "use strict";
+
+  var ids = ["lot","floors","gross","park","fh","foot","maxh","maxfar","minosr","perunit"];
+  function v(id) { var n = parseFloat(document.getElementById(id).value); return isNaN(n) ? null : n; }
+  function fmt(n) { return n.toLocaleString("en-US", { maximumFractionDigits: 0 }); }
+
+  function line(lbl, val, work, verdict) {
+    var vd = "";
+    if (verdict === true) vd = ' <span class="verdict ok">OK</span>';
+    if (verdict === false) vd = ' <span class="verdict no">DOES NOT MEET</span>';
+    return '<div class="result-line"><span class="lbl">' + lbl + '</span>' +
+           '<span class="val">' + val + vd + '</span>' +
+           '<span class="work">' + work + '</span></div>';
+  }
+
+  function calc() {
+    var lot = v("lot"), floors = v("floors"), gross = v("gross"), park = v("park") || 0,
+        fh = v("fh"), foot = v("foot"), maxh = v("maxh"), maxfar = v("maxfar"),
+        minosr = v("minosr"), perunit = v("perunit");
+    var box = document.getElementById("results");
+
+    if (!lot || lot <= 0 || !floors || !gross) {
+      box.innerHTML = '<p style="color:var(--ink-3);margin:0">Enter at least a lot area, number of floors and gross area per floor.</p>';
+      return;
+    }
+    if (foot === null || foot <= 0) foot = gross;
+
+    var html = "";
+
+    // Height
+    if (fh) {
+      var h = floors * fh;
+      html += line("Building height", h + " ft",
+        floors + " floors × " + fh + " ft = " + h + " ft" + (maxh ? "  (limit " + maxh + " ft)" : ""),
+        maxh ? h <= maxh : null);
+    }
+
+    // FAR
+    var total = floors * gross;
+    var far = total / lot;
+    html += line("Floor Area Ratio", far.toFixed(2),
+      "Total gross area = " + floors + " × " + fmt(gross) + " = " + fmt(total) + " sf<br>" +
+      "FAR = " + fmt(total) + " ÷ " + fmt(lot) + " = " + far.toFixed(2) +
+      (maxfar ? "  (limit " + maxfar.toFixed(2) + ")" : ""),
+      maxfar ? far <= maxfar : null);
+
+    // OSR
+    var open = lot - foot - park;
+    var osr = open / lot * 100;
+    html += line("Open Space Ratio", osr.toFixed(0) + "%",
+      "Open space = " + fmt(lot) + " − " + fmt(foot) + " − " + fmt(park) + " = " + fmt(open) + " sf<br>" +
+      "OSR = " + fmt(open) + " ÷ " + fmt(lot) + " × 100 = " + osr.toFixed(1) + "%" +
+      (minosr ? "  (minimum " + minosr + "%)" : ""),
+      minosr ? osr >= minosr : null);
+
+    // Coverage
+    var cov = (foot + park) / lot * 100;
+    html += line("Lot Coverage", cov.toFixed(0) + "%",
+      "(" + fmt(foot) + " + " + fmt(park) + ") ÷ " + fmt(lot) + " × 100 = " + cov.toFixed(1) + "%<br>" +
+      "Check: 100% − " + osr.toFixed(1) + "% = " + (100 - osr).toFixed(1) + "% ✓", null);
+
+    // Units
+    if (perunit && perunit > 0) {
+      var units = Math.floor(lot / perunit);
+      html += line("Max dwelling units", units,
+        fmt(lot) + " ÷ " + fmt(perunit) + " = " + (lot / perunit).toFixed(2) + " → round down → " + units + " units", null);
+    }
+
+    if (open < 0) {
+      html += '<div class="callout trap" style="margin-top:14px"><p><strong>Negative open space.</strong> The footprint plus parking is larger than the lot itself — check your footprint. Remember the footprint is <em>one floor</em>, not all of them.</p></div>';
+    }
+
+    box.innerHTML = html;
+  }
+
+  ids.forEach(function (id) {
+    document.getElementById(id).addEventListener("input", calc);
+  });
+  calc();
+
+  /* ---------- Problem generator ---------- */
+  var cur = null;
+  var uses = ["a condominium building", "an apartment building", "a medical office building", "a mixed-use retail and residential building", "a townhouse development"];
+  var towns = ["Anytown", "Brookfield", "Millbury", "Westford", "Danvers", "Foxborough"];
+
+  function rnd(a, b, step) { step = step || 1; return a + step * Math.floor(Math.random() * ((b - a) / step + 1)); }
+
+  function makeProblem() {
+    var lot = rnd(18000, 60000, 1000);
+    var floors = rnd(2, 8);
+    var fh = [10, 11, 12, 12, 14][rnd(0, 4)];
+    // keep footprint a sensible fraction of the lot
+    var gross = rnd(Math.round(lot * 0.18 / 500) * 500, Math.round(lot * 0.42 / 500) * 500, 500);
+    if (gross < 2000) gross = 2000;
+    var park = rnd(1000, Math.max(2000, Math.round(lot * 0.2 / 500) * 500), 500);
+    var maxh = [40, 45, 50, 60, 75, 90][rnd(0, 5)];
+    var maxfar = [1.0, 1.5, 2.0, 2.5, 3.0, 4.0][rnd(0, 5)];
+    var minosr = [30, 35, 40, 45, 50][rnd(0, 4)];
+
+    cur = { lot: lot, floors: floors, fh: fh, gross: gross, park: park,
+            maxh: maxh, maxfar: maxfar, minosr: minosr,
+            use: uses[rnd(0, uses.length - 1)], town: towns[rnd(0, towns.length - 1)] };
+
+    document.getElementById("problem").innerHTML =
+      '<h4>Problem</h4>' +
+      '<p>A lot in <strong>' + cur.town + ', MA</strong> has an area of <strong>' + fmt(lot) + ' sf</strong>. ' +
+      'A developer proposes ' + cur.use + ' with <strong>' + floors + ' floors</strong>, each containing ' +
+      '<strong>' + fmt(gross) + ' gross sf</strong>. Each floor is <strong>' + fh + ' ft</strong> tall. ' +
+      'A paved parking lot will cover <strong>' + fmt(park) + ' sf</strong> of the lot.</p>' +
+      '<p><strong>Zoning requires:</strong> max height <span class="mono">' + maxh + ' ft</span> · ' +
+      'max FAR <span class="mono">' + maxfar.toFixed(2) + '</span> · ' +
+      'min OSR <span class="mono">' + minosr + '%</span></p>' +
+      '<p>Compute the building height, the FAR, the OSR and the lot coverage. Does the proposal comply?</p>';
+
+    document.getElementById("solution").style.display = "none";
+  }
+
+  function showSolution() {
+    if (!cur) return;
+    var total = cur.floors * cur.gross;
+    var far = total / cur.lot;
+    var open = cur.lot - cur.gross - cur.park;
+    var osr = open / cur.lot * 100;
+    var cov = (cur.gross + cur.park) / cur.lot * 100;
+    var h = cur.floors * cur.fh;
+
+    var okH = h <= cur.maxh, okF = far <= cur.maxfar, okO = osr >= cur.minosr;
+    var all = okH && okF && okO;
+
+    function mark(ok) { return ok ? '<span class="verdict ok">OK</span>' : '<span class="verdict no">FAILS</span>'; }
+
+    document.getElementById("solution").innerHTML =
+      '<h4>Solution</h4>' +
+      '<p><strong>Height</strong></p>' +
+      '<div class="formula">' + cur.floors + ' × ' + cur.fh + ' ft = <b>' + h + ' ft</b> &nbsp; vs. limit ' + cur.maxh + ' ft &nbsp; ' + mark(okH) + '</div>' +
+      '<p><strong>Floor Area Ratio</strong> — all floors</p>' +
+      '<div class="formula">Total gross = ' + cur.floors + ' × ' + fmt(cur.gross) + ' = ' + fmt(total) + ' sf</div>' +
+      '<div class="formula">FAR = ' + fmt(total) + ' ÷ ' + fmt(cur.lot) + ' = <b>' + far.toFixed(2) + '</b> &nbsp; vs. limit ' + cur.maxfar.toFixed(2) + ' &nbsp; ' + mark(okF) + '</div>' +
+      '<p><strong>Open Space Ratio</strong> — footprint (one floor) + parking</p>' +
+      '<div class="formula">Open space = ' + fmt(cur.lot) + ' − ' + fmt(cur.gross) + ' − ' + fmt(cur.park) + ' = ' + fmt(open) + ' sf</div>' +
+      '<div class="formula">OSR = ' + fmt(open) + ' ÷ ' + fmt(cur.lot) + ' × 100 = <b>' + osr.toFixed(0) + '%</b> &nbsp; vs. min ' + cur.minosr + '% &nbsp; ' + mark(okO) + '</div>' +
+      '<p><strong>Lot Coverage</strong></p>' +
+      '<div class="formula">(' + fmt(cur.gross) + ' + ' + fmt(cur.park) + ') ÷ ' + fmt(cur.lot) + ' × 100 = <b>' + cov.toFixed(0) + '%</b></div>' +
+      '<div class="formula">Check: 100 − ' + osr.toFixed(0) + ' = ' + (100 - osr).toFixed(0) + ' ✓</div>' +
+      '<div class="callout ' + (all ? 'tip' : 'trap') + '"><p><strong>' +
+        (all ? 'The proposal complies with all three requirements.'
+             : 'The proposal does NOT comply — it fails on ' +
+               [!okH ? 'height' : null, !okF ? 'FAR' : null, !okO ? 'OSR' : null].filter(Boolean).join(' and ') + '.') +
+      '</strong></p></div>';
+
+    document.getElementById("solution").style.display = "";
+  }
+
+  document.getElementById("newprob").addEventListener("click", makeProblem);
+  document.getElementById("showsol").addEventListener("click", showSolution);
+  makeProblem();
+})();
+</script>
+</body>
+</html>

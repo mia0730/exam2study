@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Foundations — CONM 1200 Exam 2</title>
+<meta name="description" content="Week 4: shallow and deep foundations, footing sizing, piles, pile drivers, pile caps and load testing.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html"><span class="dot">C</span> CONM 1200 · Exam 2</a>
+    <nav class="main">
+      <a href="index.html" data-short="Home">Home</a>
+      <a href="foundations.html" data-short="Found.">Foundations</a>
+      <a href="concrete.html" data-short="Concrete">Concrete Basics</a>
+      <a href="placing.html" data-short="Placing">Placing &amp; Curing</a>
+      <a href="glossary.html" data-short="Terms">Glossary</a>
+      <a href="quiz.html" data-short="Test">Practice Test</a>
+      <a href="review.html" data-short="Exam 1">Exam 1</a>
+    </nav>
+    <button class="theme-btn" title="Toggle light/dark">☾</button>
+  </div>
+</header>
+
+<main class="wrap narrow">
+
+  <h1>1 · Foundations <span class="badge wk">Week 4</span></h1>
+  <p class="lede">Mehta Ch. 12, pp. 263–273. Everything here flows from one question: <strong>is there good soil right under the building, or do we have to go find it?</strong> Answer that and you've chosen shallow or deep.</p>
+
+  <div class="card toc">
+    <strong>Contents</strong>
+    <a href="#purpose">1.1 · What a foundation does, and the three requirements</a>
+    <a href="#settlement">1.2 · Settlement — and why differential is the bad one</a>
+    <a href="#shallow">1.3 · Shallow foundations</a>
+    <a href="#sizing">1.4 · Sizing a footing (the calculation)</a>
+    <a href="#deep">1.5 · Deep foundations</a>
+    <a href="#drivers">1.6 · Pile drivers</a>
+    <a href="#caps">1.7 · Pile caps &amp; grade beams</a>
+    <a href="#testing">1.8 · Pile load testing</a>
+    <a href="#log">1.9 · Reading a pile driving log</a>
+  </div>
+
+  <!-- ===== 1.1 ===== -->
+  <h2 id="purpose">1.1 · What a foundation does</h2>
+
+  <div class="callout key">
+    <span class="tag">The definition, in his words</span>
+    <p><strong>Purpose of a foundation:</strong> provide adequate support for the building by <strong>"safely" transferring building loads to the underlying soil or bedrock.</strong></p>
+  </div>
+
+  <h3>The three major building parts</h3>
+  <p>Top to bottom — and notice this ties straight back to Exam 1 vocabulary:</p>
+  <div class="tablewrap">
+    <table>
+      <tbody>
+        <tr><td><strong>Superstructure</strong></td><td>Everything above ground</td></tr>
+        <tr><td><strong>Substructure</strong></td><td>The below-ground portion of the building</td></tr>
+        <tr><td><strong>Foundation</strong></td><td>The lowest part — what actually delivers the load into the soil or rock</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>The two basic types</h3>
+  <div class="vs two">
+    <div>
+      <h4>Shallow foundation</h4>
+      <p style="font-size:14.5px;margin:0">Used when <strong>adequate bearing is directly below the substructure.</strong> The good soil is already there — just spread the load onto it.</p>
+    </div>
+    <div>
+      <h4>Deep foundation</h4>
+      <p style="font-size:14.5px;margin:0">Used when <strong>unsuitable soil beneath the substructure must be bypassed</strong> to reach competent soil or bedrock. You have to reach down past the bad stuff.</p>
+    </div>
+  </div>
+
+  <h3>The three foundation requirements</h3>
+  <div class="steps">
+    <div class="step">
+      <h4>Safeguard against structural failure</h4>
+      <p>The foundation must safely support anticipated loads. The soil or rock supporting the foundation <strong>cannot be overloaded.</strong></p>
+    </div>
+    <div class="step">
+      <h4>Tolerable amount of settlement</h4>
+      <p>Post-construction settlement of foundations supported by soil <strong>can be significant and occurs over time</strong>. The total amount must be within acceptable limits.</p>
+    </div>
+    <div class="step">
+      <h4>Technically &amp; economically feasible</h4>
+      <p>Geotechnical engineers must find the <strong>most cost-effective solution</strong> for the soil conditions at the site and the anticipated building loads.</p>
+    </div>
+  </div>
+
+  <!-- ===== 1.2 ===== -->
+  <h2 id="settlement">1.2 · Types of settlement</h2>
+
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>Type</th><th>What happens</th><th>How bad?</th></tr></thead>
+      <tbody>
+        <tr><td><strong>No settlement</strong></td><td>The building stays put</td><td>Ideal, but rarely real</td></tr>
+        <tr><td><strong>Uniform settlement</strong></td><td>The whole building sinks the same amount, evenly</td><td>Tolerable — nothing is being racked out of square</td></tr>
+        <tr><td><strong>Differential settlement</strong></td><td>Parts of the building settle <em>different amounts</em>, so the frame distorts</td><td><strong>The most troublesome.</strong> This is what cracks walls and jams doors</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout tip">
+    <p>The slide's example: the <strong>Leaning Tower of Pisa</strong> — one of the most famous examples of differential settlement. If it had settled uniformly it would just be a slightly shorter tower.</p>
+  </div>
+
+  <!-- ===== 1.3 ===== -->
+  <h2 id="shallow">1.3 · Shallow foundations</h2>
+
+  <div class="callout key">
+    <p><strong>How they work:</strong> by <strong>spreading the building loads over a large enough area so as not to exceed the soil's bearing capacity.</strong></p>
+    <p style="margin-top:8px"><strong>Bearing capacity</strong> = the maximum allowable pressure that the soil can safely support.</p>
+  </div>
+
+  <p>There also <strong>cannot be soft, compressible layers beneath the bearing layer</strong>, or you get settlement problems after construction. (Exactly why Exam 1 said to dig test pits to at least twice the footing depth.)</p>
+
+  <h3>Presumptive bearing capacities</h3>
+  <p>Building codes give <strong>presumptive (assumed) bearing capacities</strong> based on the type of soil or rock and its condition. These can be used for <strong>preliminary design</strong>. From the Massachusetts State Building Code:</p>
+
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>Material</th><th>Capacity</th></tr></thead>
+      <tbody>
+        <tr><td>Crystalline bedrock (e.g. sound granite)</td><td class="mono">100 tsf</td></tr>
+        <tr><td>Sedimentary rock (e.g. hard shale)</td><td class="mono">20 tsf</td></tr>
+        <tr><td>Dense sand &amp; gravel</td><td class="mono">6 tsf</td></tr>
+        <tr><td>Hard clayey silt or clay</td><td class="mono">4 tsf</td></tr>
+        <tr><td>Loose sand &amp; gravel</td><td class="mono">2 tsf</td></tr>
+        <tr><td>Medium stiff clayey silt or clay</td><td class="mono">1 tsf</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="callout key">
+    <p><strong>1 tsf = 1 ton per square foot = 2,000 psf.</strong> Know this conversion — a question could give you tsf and expect psf.</p>
+  </div>
+
+  <h3>Three other requirements</h3>
+  <ul>
+    <li>Should be constructed on <strong>undisturbed soil or engineered (compacted) fill</strong></li>
+    <li>The base of the foundation must be <strong>below the frost line</strong> in cold regions</li>
+    <li>Must <strong>not</strong> be constructed on <strong>frozen soil</strong></li>
+  </ul>
+
+  <h3>Shallow foundation types</h3>
+  <p>Two families: <strong>footings</strong> and <strong>slabs on grade (SOG)</strong>.</p>
+
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>Footing type</th><th>What it is</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Column footing</strong><br><em>also called an isolated column footing or a</em> <strong>spread footing</strong></td><td>Each column is supported by its own concrete pad</td></tr>
+        <tr><td><strong>Wall footing</strong><br><em>also called a</em> <strong>strip footing</strong><br><em>or continuous wall footing</em></td><td>A long continuous pad running under a wall</td></tr>
+        <tr><td><strong>Combined footing</strong></td><td>One pad supporting two or more columns</td></tr>
+        <tr><td><strong>Stepped footing</strong></td><td><strong>Used where the supporting soil slopes</strong> — the footing steps down in stages to stay at a consistent depth</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout key">
+    <span class="tag">The sentence that explains all of it</span>
+    <p><strong>"A footing is a pad that safely distributes the building weight to the supporting soil. The weaker the soil, the larger the pad."</strong> That second sentence is the whole calculation in words.</p>
+  </div>
+
+  <h3>Slab on grade with thickened edges</h3>
+  <ul>
+    <li>A <strong>single layer of concrete, several inches thick, supported by the ground</strong></li>
+    <li><strong>Poured thicker at the edges</strong> to form an integral footing to support perimeter walls</li>
+    <li><strong>Uses:</strong> residential &amp; light commercial buildings in areas with <strong>little to no frost</strong></li>
+  </ul>
+
+  <h3>One construction detail worth knowing</h3>
+  <p>On a continuous wall footing, the concrete is often <strong>cast directly against the soil with no forms</strong>. The bottom rebar is held up off the soil with <strong>concrete brick</strong>. Rebar bent into an <strong>L shape</strong> is attached to the bottom bars and extends upward — these are <strong>dowels</strong>, and they tie the wall reinforcing to the footing. Dowels extend up out of finished footings as the means of attaching walls to be built later.</p>
+
+  <!-- ===== 1.4 ===== -->
+  <h2 id="sizing">1.4 · Sizing a footing <span class="badge">Calculation</span></h2>
+
+  <div class="callout key">
+    <span class="tag">The formula</span>
+    <div class="formula" style="margin:8px 0 0"><b>Footing Area</b> = Load on Footing ÷ Soil Bearing Capacity</div>
+    <div class="formula" style="margin:8px 0 0">For a <b>square</b> footing: Side = √Area</div>
+  </div>
+
+  <p>Two steps the slides spell out before you can use it:</p>
+  <ul>
+    <li><strong>Determine the load on the footing</strong> — the total weight it will support, including dead load, live load and any other applicable loads. (For a deck: the weight of the deck structure plus expected loads like people or snow.)</li>
+    <li><strong>Determine the soil bearing capacity</strong> — the maximum pressure the soil can withstand without failing. Usually obtained from <strong>soil tests and geotechnical reports</strong>.</li>
+  </ul>
+  <p>Then choose a shape from the area: <strong>square</strong> (take the square root of the area to get each side), <strong>rectangular</strong>, or <strong>circular</strong> (use the area to calculate the diameter).</p>
+
+  <h3>His two worked examples</h3>
+
+  <div class="card">
+    <h4>Example A — the deck post</h4>
+    <p>A deck post carries <strong>6,000 lbs</strong>. The soil has a bearing capacity of <strong>2,500 psf</strong>.</p>
+    <div class="formula">Footing Area = 6,000 lbs ÷ 2,500 psf = <b>2.4 sf</b></div>
+    <div class="formula">Square footing side = √2.4 = <b>1.55 ft</b> per side</div>
+  </div>
+
+  <div class="card">
+    <h4>Example B — the class example</h4>
+    <p>Column load = <strong>60,000 lbs</strong>. Soil material = <strong>Soft Rock</strong>. What size square footing is required?</p>
+    <div class="formula">Look up Soft Rock → <b>440 psf</b></div>
+    <div class="formula">Area = 60,000 lbs ÷ 440 psf = <b>136.36 sf</b></div>
+    <div class="formula">Side = √136.36 = <b>11.68 ft × 11.68 ft</b></div>
+    <div class="callout trap">
+      <span class="tag">Careful — there's a typo on his answer slide</span>
+      <p>His slide writes the area as <strong>136.27</strong> and then takes the root of <strong>136.37</strong>. Neither is quite right: <strong>60,000 ÷ 440 = 136.36</strong>. But his <em>final</em> answer, <strong>11.68 ft</strong>, is correct — √136.36 = 11.677.</p>
+      <p style="margin-top:8px">So: <strong>do the arithmetic properly and you'll match his final answer anyway.</strong> If his answer key shows 136.27 as an intermediate step, don't second-guess yourself — you're not wrong, and the side dimension lands in the same place either way.</p>
+    </div>
+  </div>
+
+  <h3>The bearing capacity table he gave</h3>
+  <p>This is the table the class example pulls from, reproduced exactly as it appears on his slide. A table will be provided on the exam — what matters is knowing to divide by the right row.</p>
+
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>Soil type</th><th>Allowable bearing capacity (psf)</th></tr></thead>
+      <tbody>
+        <tr><td>Rock</td><td class="mono">3240</td></tr>
+        <tr><td>Soft Rock</td><td class="mono">440</td></tr>
+        <tr><td>Coarse Sand</td><td class="mono">440</td></tr>
+        <tr><td>Medium Sand</td><td class="mono">245</td></tr>
+        <tr><td>Fine Sand</td><td class="mono">440</td></tr>
+        <tr><td>Stiff Sand</td><td class="mono">100</td></tr>
+        <tr><td>Soft Clay</td><td class="mono">100</td></tr>
+        <tr><td>Very Soft Clay</td><td class="mono">50</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Try it</h3>
+  <p>Enter any load and capacity — it works out the area and the square side, showing the arithmetic. Start by re-entering 60,000 and 440 to confirm you get 136.27 and 11.68.</p>
+
+  <div class="card">
+    <div class="calcgrid">
+      <div class="field"><label for="load">Load on footing (lbs)</label><input id="load" type="number" value="60000"></div>
+      <div class="field"><label for="cap">Soil bearing capacity (psf)</label><input id="cap" type="number" value="440"></div>
+    </div>
+    <div id="fresults" style="margin-top:16px"></div>
+  </div>
+
+  <div class="btnrow">
+    <button class="btn" id="newfprob">New practice problem</button>
+    <button class="btn ghost" id="showfsol">Show solution</button>
+  </div>
+  <div class="card" id="fproblem"></div>
+  <div class="card" id="fsolution" style="display:none"></div>
+
+  <div class="callout trap">
+    <span class="tag">Two traps</span>
+    <p><strong>Units.</strong> If the table gives <strong>tsf</strong> and the load is in pounds, convert first — 1 tsf = 2,000 psf. <strong>Square root.</strong> The formula gives you an <em>area</em>; the question usually wants the <em>side dimension</em>, so don't stop at the division.</p>
+  </div>
+
+  <!-- ===== 1.5 ===== -->
+  <h2 id="deep">1.5 · Deep foundations</h2>
+
+  <p>Used when the unsuitable soil beneath the substructure must be bypassed to reach competent soil or bedrock.</p>
+
+  <h3>The five types he lists</h3>
+  <div class="tablewrap">
+    <table>
+      <tbody>
+        <tr><td><strong>Piles</strong></td><td><strong>Driven</strong> &nbsp;·&nbsp; <strong>Cast-in-place (augered)</strong></td></tr>
+        <tr><td><strong>Caissons</strong></td><td>Also called <strong>drilled piers</strong>. The <strong>belled caisson</strong> flares out at the bottom</td></tr>
+        <tr><td><strong>Pressure Injected Footings (PIFs)</strong></td><td>Also called a <strong>bulb pile</strong> or a <strong>Franki pile</strong>. PIFs were used for WIT's own student apartment building at 525 Huntington Avenue</td></tr>
+        <tr><td><strong>Load Bearing Elements (LBEs)</strong></td><td>Also called <strong>barrettes</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>How piles carry building loads</h3>
+  <p>Gravity loads on a building — <strong>dead, live &amp; snow</strong> — act in a <strong>downward</strong> direction imposing <strong>compressive</strong> forces on the foundation. <strong>Compression piles</strong> transmit these forces to the supporting layers, in one of three ways:</p>
+
+  <div class="vs two">
+    <div>
+      <h4>End bearing</h4>
+      <p style="font-size:14.5px;margin:0">Resistance at the <strong>pile tip (end)</strong> from dense/stiff soil or firm bedrock. The pile works like a column standing on rock.</p>
+    </div>
+    <div>
+      <h4>Friction</h4>
+      <p style="font-size:14.5px;margin:0">Resistance between the <strong>sides of the pile and the soil</strong> — <strong>skin friction</strong>. The pile grips the soil along its whole length.</p>
+    </div>
+  </div>
+  <p style="text-align:center;font-weight:650">…or a <strong>combination of both</strong>.</p>
+
+  <h3>Compression piles vs. uplift piles</h3>
+  <ul>
+    <li>Occasionally piles must be designed to resist <strong>uplift</strong> — forces that tend to <strong>pull the piles out of the ground</strong>. These piles are in <strong>tension</strong>.</li>
+    <li>Piles designed to resist uplift are called <strong>uplift piles</strong>, <strong>tension piles</strong> or <strong>anchor piles</strong>.</li>
+    <li><strong>Wind</strong> can cause overturning of a structure — on a transmission tower, the piles on one side go into compression while those on the other side go into tension.</li>
+    <li><strong>Hydrostatic forces</strong> caused by groundwater can cause uplift on a substructure, requiring uplift piles to hold it down.</li>
+    <li>A pile with a <strong>straight shaft can only resist uplift through skin friction</strong>. A <strong>bulb pile</strong> has the added advantage of the bulb at the bottom, which <strong>acts like an anchor</strong> to resist uplift.</li>
+  </ul>
+
+  <h3>Materials for driven piles</h3>
+  <ul>
+    <li><strong>Steel</strong> — H-piles or steel pipe</li>
+    <li><strong>Precast concrete</strong></li>
+    <li><strong>Wood / timber</strong></li>
+  </ul>
+
+  <h3>Site cast augered piles</h3>
+  <p>The cast-in-place alternative to driving. Note how closely this mirrors the slurry wall from Exam 1 — bottom-up placement again.</p>
+  <div class="steps">
+    <div class="step"><h4>Auger the hole</h4><p>The hole is made using an auger.</p></div>
+    <div class="step"><h4>Fill with concrete or grout</h4>
+      <p><strong>Concrete</strong> is a mixture of sand, gravel, cement &amp; water. <strong>Grout is similar but with no gravel.</strong> It is forced through a pipe in the <strong>stem of the auger</strong>.</p></div>
+    <div class="step"><h4>Fill from the bottom up</h4><p>The hole fills from the bottom up <strong>as the auger is slowly lifted out</strong> — which is what keeps the hole from collapsing.</p></div>
+    <div class="step"><h4>Drop in the cage</h4><p>A <strong>pre-fabricated rebar cage</strong> is placed through the wet concrete or grout to strengthen the pile.</p></div>
+  </div>
+
+  <h3>Load Bearing Elements (barrettes)</h3>
+  <ul>
+    <li>Constructed of <strong>cast-in-place concrete reinforced with rebar</strong></li>
+    <li>Excavation &amp; construction of each LBE is done using <strong>modified clamshell &amp; slurry wall techniques</strong> — the same method as the Exam 1 slurry wall</li>
+    <li>Constructed in different shapes: <strong>rectangular, L, X or H</strong></li>
+    <li>Each barrette is usually designed to <strong>support one column</strong></li>
+  </ul>
+
+  <!-- ===== 1.6 ===== -->
+  <h2 id="drivers">1.6 · Pile drivers</h2>
+
+  <div class="callout key">
+    <p><strong>Pile drivers are of 2 types: Impact or Vibratory.</strong></p>
+  </div>
+
+  <div class="vs two">
+    <div>
+      <h4>Impact hammers</h4>
+      <ul>
+        <li>Use the <strong>force of a falling ram</strong> to drive piles</li>
+        <li><strong>Diesel operated hammers are most common</strong></li>
+        <li>The ram strikes a steel <strong>helmet</strong> placed on top of the pile</li>
+        <li><strong>Wooden cushions</strong> inside the helmet soften the blow so the pile top (the <strong>butt</strong>) is not damaged</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Vibratory hammers</h4>
+      <ul>
+        <li><strong>Best suited to granular soils</strong>, where they are very efficient (fast)</li>
+        <li>Vibration causes the soil around the pile to <strong>liquefy</strong>; the pile sinks</li>
+        <li><strong>Rotating eccentric weights</strong> inside the driver body cause the vibrations</li>
+        <li>Can be hung from a crane or attached to an excavator boom</li>
+        <li>Can also be used to <strong>extract old piles</strong></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="callout tip">
+    <span class="tag">Carry-over from Exam 1</span>
+    <p>Vibratory equipment works in <strong>granular</strong> soil. Same as the vibratory roller for compacting sand and gravel on Exam 1 — vibration rearranges loose grains, and does nothing useful in clay. One idea, two exams.</p>
+  </div>
+
+  <h3>The Nashville Coliseum case study</h3>
+  <p>A 67,000-seat sports coliseum in Nashville, TN (now Nissan Stadium), with deep foundations:</p>
+  <ul>
+    <li><strong>3,500 driven piles</strong>; 12x53 <strong>H piles with end bearing</strong></li>
+    <li>Pile length varied from <strong>25' to 75'</strong></li>
+    <li><strong>3 pile drivers</strong> with diesel powered hammers</li>
+    <li>Driving rate: <strong>20–25 piles per day per rig</strong></li>
+    <li>Driving tolerance: <strong>6 inches maximum</strong></li>
+  </ul>
+
+  <!-- ===== 1.7 ===== -->
+  <h2 id="caps">1.7 · Pile caps &amp; grade beams</h2>
+
+  <div class="vs two">
+    <div>
+      <h4>Pile cap</h4>
+      <ul>
+        <li><strong>Ties piles in a cluster together</strong></li>
+        <li><strong>Distributes the column load to the cluster</strong></li>
+        <li>Used under a column, or under a wall</li>
+        <li>Clusters come in different arrangements — 2, 3 (triangular), 4, 9 piles, etc.</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Grade beam</h4>
+      <ul>
+        <li><strong>Spans between pile caps</strong></li>
+        <li>Another way to support <strong>basement walls</strong></li>
+        <li><strong>Cast against the ground, but carries wall loads back to the pile clusters</strong> — it doesn't rely on the soil under it</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ===== 1.8 ===== -->
+  <h2 id="testing">1.8 · Pile load testing</h2>
+
+  <div class="callout key">
+    <p><strong>Purpose of a pile load test:</strong> to determine or confirm the <strong>installation criteria</strong> and the <strong>design capacity</strong> of piles.</p>
+  </div>
+
+  <ul>
+    <li>The design strength of a pile is calculated by the <strong>geotechnical engineer</strong> from data like <strong>blow counts on boring logs</strong> — the Exam 1 SPT data feeding straight into Exam 2.</li>
+    <li>Testing is needed to confirm that a pile can <strong>actually achieve the predicted capacity</strong> when driven according to the specs the engineer has written.</li>
+  </ul>
+
+  <h3>The Static Load Test — the most commonly used test</h3>
+  <div class="steps">
+    <div class="step"><h4>Install the test pile</h4></div>
+    <div class="step"><h4>Apply load in increments</h4><p>Load is applied to the pile <strong>in increments</strong>, usually <strong>up to twice the design capacity</strong>.</p></div>
+    <div class="step"><h4>Remove load in increments</h4></div>
+    <div class="step"><h4>Measure settlement at every step</h4><p><strong>Pile settlement is measured and recorded for each increment</strong> using dial gauges mounted on reference beams.</p></div>
+  </div>
+
+  <p>Two ways to generate the load:</p>
+  <ul>
+    <li><strong>Load platform</strong> — a platform of weights on cross beams bearing on the test pile through cribbing</li>
+    <li><strong>Anchor piles</strong> — a hydraulic jack pushes down on the test pile against test beams held down by anchor piles on either side</li>
+  </ul>
+
+  <!-- ===== 1.9 ===== -->
+  <h2 id="log">1.9 · Reading a pile driving log</h2>
+
+  <p>The sample is an <strong>H-Pile Driving Log</strong> from Haley &amp; Aldrich for the Massachusetts College of Art New Residence Hall in Boston (GC: Suffolk Construction; pile contractor: H&amp;L Pile). It's the pile-driving equivalent of Exam 1's boring log.</p>
+
+  <h3>What's recorded on it</h3>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>Section</th><th>What it captures</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Header</strong></td><td>Pile number and its <strong>column location</strong> on the grid (e.g. D-1), project, client, GC, pile contractor, field rep</td></tr>
+        <tr><td><strong>Sections &amp; lengths</strong></td><td>Each section of pile, the date driven, and its measured length — this pile was two 75 ft sections spliced, total <strong>length of pile 151 ft</strong></td></tr>
+        <tr><td><strong>Elevations</strong></td><td>Approx. ground surface el., initial top el., <strong>tip elevation</strong>, <strong>cut-off elevation</strong> — how deep the pile ended up and where it gets cut</td></tr>
+        <tr><td><strong>Heave measurement</strong></td><td>Whether driving nearby piles pushed this one back <em>up</em>. Movement of 0.00 means no heave. Heave means it must be <strong>redriven</strong></td></tr>
+        <tr><td><strong>The main table</strong></td><td><strong>Depth (ft) vs. blows per foot</strong>, all the way down. Watch the numbers climb: ~2 blows/ft near the surface, 6, then 10, 12, 24, 36 as the pile reaches denser material</td></tr>
+        <tr><td><strong>Remarks checkboxes</strong></td><td>Rejected · added due to mislocated pile · added due to broken pile · added/deleted due to design change · possibly broken · stopped driving to splice · stopped driving at ___ ft</td></tr>
+        <tr><td><strong>Pile data</strong></td><td>Type — <strong>End Bearing or Friction</strong> — size, and design capacity in tons</td></tr>
+        <tr><td><strong>Hammer data</strong></td><td>Type, <strong>rated energy</strong> and <strong>measured energy</strong> in ft-lbs</td></tr>
+        <tr><td><strong>Final acceptance</strong></td><td><strong>Pile Accepted</strong> or <strong>Pile Rejected</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout key">
+    <span class="tag">The single most important line on the log</span>
+    <p>At the bottom: <strong>"Blows for final 6 in.: 8, 9, 10, 11, 11, 15 — Blows/in. Avg.: 10.6 · Req. Avg.: 8.0"</strong></p>
+    <p style="margin-top:8px">This is the <strong>driving resistance</strong>, or <strong>set</strong>. The spec says the pile must take at least <strong>8 blows per inch</strong> over the final inches before it counts as having reached capacity. This pile averaged <strong>10.6</strong>, which exceeds 8.0 — so it's <strong>accepted</strong>. Rising blow counts mean rising resistance, which means the pile has found competent bearing.</p>
+  </div>
+
+  <div class="callout tip">
+    <p><strong>The parallel to learn:</strong> on a <em>boring</em> log, blow count (N) tells you how strong the soil is. On a <em>pile driving</em> log, blows per inch tells you whether the pile has reached soil strong enough to carry it. Both are "how hard was it to push steel into the ground."</p>
+  </div>
+
+  <!-- ===== Self check ===== -->
+  <div class="selfcheck">
+    <h4>Self-check — close the page and answer these</h4>
+    <ol>
+      <li>In one sentence, what is the purpose of a foundation?</li>
+      <li>What's the difference between when you'd use a shallow vs. a deep foundation?</li>
+      <li>Which type of settlement is the most troublesome, and why?</li>
+      <li>Write the footing area formula from memory. Now size a square footing for a 40,000 lb column on soil with a capacity of 2,000 psf.</li>
+      <li>Name the four footing types. Which one is used on sloping ground?</li>
+      <li>What are the three ways a compression pile carries load?</li>
+      <li>What's the difference between an impact hammer and a vibratory hammer, and which soil suits the vibratory one?</li>
+      <li>What does a pile cap do? What does a grade beam do?</li>
+      <li>In a static load test, how much load is applied, and what's measured?</li>
+      <li>On a pile driving log, what does it mean if the average blows/inch exceeds the required average?</li>
+    </ol>
+  </div>
+
+  <div class="btnrow">
+    <a class="btn" href="concrete.html">Next: Concrete Basics →</a>
+    <a class="btn ghost" href="quiz.html">Jump to the practice test</a>
+  </div>
+
+</main>
+
+<footer>CONM 1200 · Building Construction · Exam 2 study site</footer>
+
+<script src="app.js"></script>
+<script>
+(function () {
+  "use strict";
+  function fmt(n, d) { return n.toLocaleString("en-US", { minimumFractionDigits: d === undefined ? 0 : d, maximumFractionDigits: d === undefined ? 2 : d }); }
+  function v(id) { var n = parseFloat(document.getElementById(id).value); return isNaN(n) ? null : n; }
+
+  function calc() {
+    var load = v("load"), cap = v("cap");
+    var box = document.getElementById("fresults");
+    if (!load || !cap || cap <= 0) {
+      box.innerHTML = '<p style="color:var(--ink-3);margin:0">Enter a load and a bearing capacity.</p>';
+      return;
+    }
+    var area = load / cap;
+    var side = Math.sqrt(area);
+    var dia = Math.sqrt(4 * area / Math.PI);
+    box.innerHTML =
+      '<div class="result-line"><span class="lbl">Required footing area</span><span class="val">' + fmt(area, 2) + ' sf</span>' +
+      '<span class="work">' + fmt(load) + ' lbs ÷ ' + fmt(cap) + ' psf = ' + fmt(area, 2) + ' sf</span></div>' +
+      '<div class="result-line"><span class="lbl">Square footing</span><span class="val">' + fmt(side, 2) + ' ft × ' + fmt(side, 2) + ' ft</span>' +
+      '<span class="work">√' + fmt(area, 2) + ' = ' + fmt(side, 2) + ' ft per side</span></div>' +
+      '<div class="result-line"><span class="lbl">Round footing (if asked)</span><span class="val">' + fmt(dia, 2) + ' ft diameter</span>' +
+      '<span class="work">d = √(4A ÷ π) = √(4 × ' + fmt(area, 2) + ' ÷ 3.1416) = ' + fmt(dia, 2) + ' ft</span></div>';
+  }
+  document.getElementById("load").addEventListener("input", calc);
+  document.getElementById("cap").addEventListener("input", calc);
+  calc();
+
+  /* Practice problems */
+  var SOILS = [["Rock",3240],["Soft Rock",440],["Coarse Sand",440],["Medium Sand",245],["Fine Sand",440],["Stiff Sand",100],["Soft Clay",100],["Very Soft Clay",50]];
+  var cur = null;
+  function rnd(a,b,s){ s=s||1; return a + s*Math.floor(Math.random()*((b-a)/s+1)); }
+
+  function make() {
+    var soil = SOILS[rnd(0, SOILS.length-1)];
+    var load = rnd(8, 120, 2) * 1000;
+    cur = { soil: soil[0], cap: soil[1], load: load };
+    document.getElementById("fproblem").innerHTML =
+      '<h4>Problem</h4><p>A column carries a load of <strong>' + fmt(load) + ' lbs</strong>. ' +
+      'The supporting soil is <strong>' + soil[0] + '</strong>. ' +
+      'Using the bearing capacity table above, what size <strong>square</strong> footing is required?</p>';
+    document.getElementById("fsolution").style.display = "none";
+  }
+  function sol() {
+    if (!cur) return;
+    var area = cur.load / cur.cap, side = Math.sqrt(area);
+    document.getElementById("fsolution").innerHTML =
+      '<h4>Solution</h4>' +
+      '<div class="formula">' + cur.soil + ' → <b>' + fmt(cur.cap) + ' psf</b></div>' +
+      '<div class="formula">Area = ' + fmt(cur.load) + ' lbs ÷ ' + fmt(cur.cap) + ' psf = <b>' + fmt(area, 2) + ' sf</b></div>' +
+      '<div class="formula">Side = √' + fmt(area, 2) + ' = <b>' + fmt(side, 2) + ' ft × ' + fmt(side, 2) + ' ft</b></div>';
+    document.getElementById("fsolution").style.display = "";
+  }
+  document.getElementById("newfprob").addEventListener("click", make);
+  document.getElementById("showfsol").addEventListener("click", sol);
+  make();
+})();
+</script>
+</body>
+</html>
